@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Registration</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sing_in_framelayout"><![CDATA[Sing_in /> </FrameLayout>]]></string>
+    <string name="enter_password">enter_password</string>
+    <string name="enter_name">enter_name</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="todo">TODO</string>
+    <string name="tomasgadji_gmail_com">tomasgadji@gmail.com</string>
+    <string name="registration">registration</string>
+    <string name="Registration">Registration</string>
+</resources>
