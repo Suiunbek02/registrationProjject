@@ -24,6 +24,5 @@ object PreferencesModule {
     @Provides
     fun provideUserPreferencesData(preferencesHelper: PreferencesHelper) =
         UserPreferencesData(preferencesHelper)
-
 }
 

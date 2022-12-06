@@ -2,6 +2,7 @@ package com.example.registrationprojject.ui.fragments.sign.`in`
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
@@ -27,15 +28,24 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_in) {
     }
 
     private fun setupListener() {
-        clickSignIn()
+        getBottom()
         clickSignUp()
     }
 
-    private fun clickSignIn() {
-        binding.signInBottom.setOnClickListener {
-            userPreferencesData.isAuthorized = true
-            requireActivity().findNavController(R.id.nav_host_fragment)
-                .navigate(R.id.action_global_mainFlowFragment)
+    private fun getBottom() = with(binding) {
+        signInBottom.setOnClickListener {
+            if (enterPassword.text.length >= 8) {
+                userPreferencesData.isAuthorized = true
+                requireActivity().findNavController(R.id.nav_host_fragment)
+                    .navigate(R.id.action_global_mainFlowFragment)
+            }else {
+                textImage.visibility = View.VISIBLE
+                Toast.makeText(
+                    requireContext(),
+                    "Text have to be more then 8 symbols",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
         }
     }
 

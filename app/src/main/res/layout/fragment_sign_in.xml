@@ -32,12 +32,47 @@
             android:background="@drawable/name_bottom"
             android:backgroundTint="@color/teal_700"
             android:layout_marginBottom="25dp"
-            android:textColor="@color/black"
+            android:textColor="@color/teal_200"
             android:textSize="25sp"
             android:padding="15dp"
-            android:gravity="start|center"
+            android:gravity="center"
             android:inputType="textPersonName"
             android:hint="@string/enter_name"/>
+
+        <ImageView
+            android:id="@+id/text_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/moon"
+            app:layout_constraintEnd_toEndOf="@id/enter_name"
+            app:layout_constraintTop_toTopOf="@id/enter_name"
+            app:layout_constraintBottom_toBottomOf="@id/enter_name"
+            android:visibility="gone"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:id="@+id/password_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/email"
+            app:layout_constraintStart_toStartOf="@id/enter_password"
+            app:layout_constraintTop_toTopOf="@id/enter_password"
+            app:layout_constraintBottom_toBottomOf="@id/enter_password"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:id="@+id/account_image"
+            android:layout_width="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="35dp"
+            android:background="@drawable/account"
+            app:layout_constraintStart_toStartOf="@id/enter_name"
+            app:layout_constraintTop_toTopOf="@id/enter_name"
+            app:layout_constraintBottom_toBottomOf="@id/enter_name"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/todo" />
 
         <EditText
             android:id="@+id/enter_password"
@@ -52,8 +87,8 @@
             android:background="@drawable/name_bottom"
             android:inputType="textPersonName"
             app:layout_constraintTop_toBottomOf="@id/enter_name"
-            android:gravity="start|center"
-            android:textColor="@color/black"
+            android:gravity="center"
+            android:textColor="@color/teal_200"
             android:hint="@string/enter_password"
             tools:ignore="TextFields" />
 

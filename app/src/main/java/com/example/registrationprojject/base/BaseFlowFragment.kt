@@ -21,6 +21,4 @@ abstract class BaseFlowFragment(@LayoutRes layoutId: Int,
             childFragmentManager.findFragmentById(idFlowFragment) as NavHostFragment
         val navController = navHostFragment.navController
     }
-
-
 }

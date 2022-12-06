@@ -26,7 +26,6 @@ class SignUpFragment : Fragment(R.layout.fragment_sign_up) {
     }
 
     private fun migrationToHomeFragment() = with(binding) {
-
         btnRegistration.setOnClickListener {
             if (editRegistration.text.length >= 8) {
                 userPreferencesData.isAuthorized = true
