@@ -15,11 +15,11 @@
     </style>
 
     <!-- SplashScreen -->
-    <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/black</item>
+    <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+       <!-- <item name="colorPrimary">@color/black</item>
         <item name="colorPrimaryVariant">@color/black</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>-->
         <item name="android:windowBackground">@drawable/background_splashscreen</item>
-        <item name="android:statusBarColor" tools:targetApi="l">@color/gray</item>
+       <!-- <item name="android:statusBarColor" tools:targetApi="l">@color/gray</item>-->
     </style>
 </resources>
